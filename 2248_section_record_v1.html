@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>단면 종합 기록지 — 第2248基 (No.181+97) · v1</title>
+<title>단면 종합 기록지 — 第2248基 (No.181+97) · v1.1</title>
 <style>
 :root{
   --ink:#1b1d21; --mid:#5a6068; --dim:#8b9099; --line:#dfe2e7;
@@ -24,6 +24,7 @@ body{margin:0;background:var(--bg);color:var(--ink);
 .s-sheet{background:#eff0f2;color:var(--sheet);border:1px solid #dadde1}
 .s-auto{background:#fdeeee;color:var(--auto);border:1px solid #f2c7c7}
 .s-ocr{background:#fdf3e0;color:var(--ocr);border:1px solid #f0dcb4}
+.s-inf{background:#f3ecfa;color:#6b3fa0;border:1px solid #dbc9ee}
 
 header{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 20px;margin-bottom:13px}
 .htop{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
@@ -69,6 +70,9 @@ h1 small{font-weight:400;color:var(--mid);font-size:15px;margin-left:6px}
 .face{fill:none;stroke:#38e1c4;stroke-width:2.5}
 .mk-o{fill:none;stroke:#ff5d8f;stroke-width:3.4}
 .mk-i{fill:none;stroke:#ff5d8f;stroke-width:3.4;stroke-dasharray:8 7;opacity:.8}
+.bd{fill:none;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}
+.bdh{fill:none;stroke:#0d0f12;stroke-width:8;opacity:.5;stroke-linecap:round;stroke-linejoin:round}
+.bd12{stroke:#ff9d3f} .bd13{stroke:#3fd0ff} .bd23{stroke:#c77dff}
 .toggles{display:flex;flex-wrap:wrap;gap:7px;padding:10px 16px;background:#fafbfc;border-top:1px solid var(--line)}
 .tg{display:inline-flex;align-items:center;gap:6px;font-size:12px;padding:5px 11px;
   border:1px solid var(--line);border-radius:16px;cursor:pointer;user-select:none;background:#fff}
@@ -123,6 +127,19 @@ tbody tr:last-child td{border-bottom:none}
 .scale{font-size:10px;color:var(--dim);text-align:right;margin-top:3px}
 .mrow:last-child{margin-bottom:8px}
 
+/* 암종 후보 */
+.litho{display:flex;align-items:center;gap:12px;border:1px solid #dbc9ee;background:#faf7fd;
+  border-radius:9px;padding:11px 14px;margin-bottom:12px}
+.litho .chip{width:26px;height:26px;border-radius:5px;border:1px solid rgba(0,0,0,.2);flex:none}
+.litho .lname{font-size:14px;font-weight:800;letter-spacing:-.2px}
+.litho .ljp{font-size:11px;color:var(--dim);margin-top:2px}
+.lh{margin:12px 0 5px;font-size:11px;color:var(--dim);font-weight:700;letter-spacing:.2px}
+.lb{margin:0;padding-left:18px;font-size:11.5px;color:var(--mid);line-height:1.6}
+.lb li{margin:3px 0}
+.vmap{width:100%;border-collapse:collapse;margin-top:4px}
+.vmap td{padding:5px 8px;font-size:11.5px;border-bottom:1px solid #eef0f3}
+.vmap tr:last-child td{border-bottom:none}
+
 /* 커버리지 */
 .cov .y td:first-child{font-weight:600}
 .cov .n{background:#fcfcfd}
@@ -145,7 +162,7 @@ footer{margin-top:16px;font-size:11.5px;color:var(--dim);text-align:center;line-
   <div class="htop">
     <h1>第 2248 基 <small>No.181+97 · TD 2239 m</small></h1>
     <div class="flags">
-      <span class="flag f-v">단면 종합 기록지 v1</span>
+      <span class="flag f-v">단면 종합 기록지 v1.1</span>
       <span class="flag f-a">자동분석 미검수</span>
       <span class="flag f-s">관찰시트 미수령</span>
     </div>
@@ -171,16 +188,16 @@ footer{margin-top:16px;font-size:11.5px;color:var(--dim);text-align:center;line-
   </div>
   <div class="st agf">
     <h3>장척강관 선수 (AGF) <span class="src s-docm">문서실측</span></h3>
-    <div class="big">우산 안 · 진입 1 m / 12.5 m</div>
-    <p>基2247에서 2026-07-07 시공. φ114.3  L=12.5 m.</p>
+    <div class="big">담당구간 진입 1 m / 6 m</div>
+    <p>基2247에서 2026-07-07 시공, 다음은 基2253. φ114.3  L=12.5 m — 강관 길이보다 설치간격이 짧아 6.5 m 겹친다.</p>
   </div>
   <div class="st jud">
-    <h3>최근접 암반판정 <span class="src s-ocr">OCR 판독</span></h3>
+    <h3>최근접 암반판정 <span class="src s-ocr">전사: Claude 판독</span></h3>
     <div class="big">제51회 · 基2241</div>
     <p>판정 지점에서 7 m 하류(판정 이후 굴착). 이 판정과 같은 基에서 지보가 강화됐다.</p>
   </div>
   <div class="st mea">
-    <h3>최근접 계측 단면 <span class="src s-ocr">OCR 판독</span></h3>
+    <h3>최근접 계측 단면 <span class="src s-ocr">전사: Claude 판독</span></h3>
     <div class="big">基2244 · 4 m 후방</div>
     <p>No.181+93.000 천단 -32.5 mm / 내공 -19.9 mm — 관리치 이내. 이미 굴착된 구간의 계측치. 이 단면에는 계측기 없음.</p>
   </div>
@@ -201,6 +218,7 @@ footer{margin-top:16px;font-size:11.5px;color:var(--dim);text-align:center;line-
           <g id="gArc"><circle class="arc" cx="801.1" cy="1045.0" r="731.8"/></g>
           <g id="gFace"><path class="face" d="M1392,919 1396,924 1404,921 1414,926 1418,923 1431,926 1451,921 1431,918Z M95,841 99,841 102,836 106,840 102,845 104,860 100,864 102,874 110,873 110,878 106,882 101,882 98,888 102,892 110,889 117,897 113,901 115,907 134,907 153,915 171,909 197,908 203,903 209,903 220,910 281,911 293,916 283,917 278,921 291,925 298,912 303,909 342,907 353,902 360,904 371,896 381,903 384,912 389,906 404,903 417,909 422,915 427,909 435,916 428,922 425,917 408,919 411,924 407,930 410,934 408,939 414,942 425,941 428,927 432,929 429,935 433,939 436,930 442,928 443,936 447,940 453,933 455,941 460,943 474,940 478,931 481,939 487,940 487,928 478,929 475,926 478,923 490,922 496,931 502,926 509,931 514,928 523,931 530,926 532,931 540,928 546,933 551,928 567,930 564,935 571,941 576,939 571,935 576,924 587,924 590,927 596,923 608,924 620,931 635,932 637,936 630,939 652,940 659,941 664,946 682,946 687,950 686,958 690,961 708,960 722,966 748,966 755,969 773,966 792,970 803,966 811,968 814,972 810,977 804,977 814,980 825,977 846,978 851,977 851,971 861,971 862,974 857,977 861,977 870,989 876,984 885,986 902,977 923,977 927,971 934,971 937,975 952,969 972,971 977,966 987,965 995,959 1009,961 1022,958 1027,951 1037,956 1047,956 1052,951 1093,946 1103,941 1172,941 1172,937 1164,937 1162,934 1186,930 1187,927 1194,931 1211,931 1213,935 1205,939 1215,944 1220,941 1227,945 1231,941 1253,940 1261,941 1265,945 1271,941 1286,940 1268,936 1267,933 1274,930 1268,928 1268,924 1279,921 1291,926 1293,923 1311,921 1302,913 1300,918 1278,921 1272,917 1226,917 1232,905 1240,908 1245,914 1252,915 1259,906 1269,905 1275,907 1270,911 1272,912 1282,906 1302,911 1322,911 1332,906 1348,905 1354,910 1359,904 1365,907 1371,904 1373,908 1369,911 1378,912 1390,908 1398,915 1402,910 1417,906 1423,907 1420,911 1436,911 1431,908 1433,905 1437,909 1447,905 1452,911 1461,911 1455,907 1461,905 1465,909 1473,905 1480,908 1484,904 1491,909 1496,902 1499,908 1510,916 1508,921 1515,924 1515,901 1521,902 1527,913 1531,911 1532,901 1536,902 1539,911 1541,909 1535,881 1530,874 1531,868 1527,862 1521,864 1517,857 1520,848 1515,841 1516,828 1509,820 1500,827 1502,836 1509,827 1511,837 1502,844 1502,878 1494,879 1492,876 1491,849 1488,845 1488,833 1491,829 1483,828 1480,807 1487,805 1495,791 1500,794 1499,812 1502,816 1506,814 1507,803 1502,790 1479,785 1481,771 1489,766 1481,754 1477,740 1473,742 1471,749 1469,747 1470,733 1466,729 1466,717 1446,690 1436,667 1426,656 1419,642 1403,626 1384,592 1374,589 1375,583 1360,569 1359,564 1350,561 1349,555 1326,535 1323,526 1314,522 1311,517 1303,515 1301,507 1282,495 1281,489 1258,477 1258,471 1246,468 1241,460 1232,458 1230,453 1216,444 1202,439 1201,433 1183,422 1177,423 1171,414 1153,410 1150,404 1134,394 1127,395 1110,386 1102,389 1099,377 1077,373 1067,363 1057,364 1034,353 1015,352 1001,355 996,353 999,344 991,341 977,341 969,336 941,330 932,336 923,328 887,323 884,320 871,319 865,322 859,317 842,318 839,321 822,316 816,322 811,317 783,315 783,320 791,319 783,326 770,314 752,320 747,318 741,322 733,319 729,323 667,326 644,338 633,336 602,343 591,354 577,350 571,355 552,361 546,368 540,365 532,366 521,374 508,375 496,386 491,385 484,391 464,394 451,408 435,413 431,418 424,419 417,427 399,433 397,439 389,439 377,449 371,459 363,461 353,456 358,462 348,476 348,498 342,502 337,499 342,496 342,478 338,479 336,486 325,490 324,497 318,499 315,508 312,498 308,498 299,512 303,517 298,526 282,527 278,530 274,542 259,546 261,550 250,566 251,574 237,582 233,590 228,592 227,598 211,602 212,611 203,617 198,636 189,637 179,656 171,664 164,665 158,677 159,683 152,702 151,715 143,719 143,725 133,740 132,753 120,766 122,771 118,778 122,779 130,772 131,784 125,787 121,781 117,781 112,786 107,801 107,813 103,817 105,827Z"/></g>
           <g id="gMuck"><path class="mk-o" d="M80.0,920.0 L88.9,908.9 L97.8,908.9 L106.6,906.6 L115.6,920.0 L124.4,920.0 L133.3,917.8 L142.2,911.1 L151.1,920.0 L160.0,915.5 L168.9,911.1 L177.8,917.8 L186.6,915.5 L195.6,904.5 L204.4,900.0 L213.3,906.6 L222.2,908.9 L231.1,913.3 L240.0,908.9 L248.9,906.6 L257.8,911.1 L266.6,906.6 L275.6,906.6 L284.4,911.1 L293.3,911.1 L302.2,917.8 L311.1,906.6 L320.0,913.3 L328.9,913.3 L337.8,915.5 L346.6,917.8 L355.5,908.9 L364.4,900.0 L373.3,893.3 L382.2,897.8 L391.1,897.8 L400.0,900.0 L408.9,900.0 L417.8,902.2 L426.6,900.0 L435.5,891.1 L444.4,893.3 L453.3,904.5 L462.2,891.1 L471.1,893.3 L480.0,897.8 L488.9,897.8 L497.8,915.5 L506.6,920.0 L515.5,935.5 L524.4,931.1 L533.3,924.5 L542.2,911.1 L551.1,900.0 L560.0,897.8 L568.9,893.3 L577.8,902.2 L586.6,922.2 L595.5,920.0 L604.4,920.0 L613.3,922.2 M631.1,953.3 L640.0,980.0 L648.9,1002.2 L657.7,1004.4 L666.6,1004.4 L675.5,1006.6 L684.4,1013.3 L693.3,1017.8 L702.2,1022.2 L711.1,1026.6 L720.0,1024.4 L728.9,1022.2 L737.7,1004.4 L746.6,997.8 L755.5,1004.4 L764.4,1011.1 L773.3,1011.1 L782.2,1004.4 L791.1,1013.3 L800.0,1028.9 L808.9,1031.1 L817.7,1022.2 L826.6,1022.2 L835.5,1033.3 L844.4,1022.2 L853.3,1024.4 L862.2,1028.9 L871.1,1022.2 L880.0,1020.0 L888.9,995.6 L897.7,980.0 L906.7,980.0 L915.5,977.8 L924.4,971.1 L933.3,973.3 L942.2,975.6 L951.1,971.1 L959.9,971.1 L968.9,977.8 L977.7,982.2 L986.7,982.2 L995.5,982.2 L1004.4,986.6 L1013.3,1000.0 L1022.2,1000.0 L1031.1,1000.0 L1039.9,1000.0 L1048.9,1000.0 L1057.7,1006.6 L1066.7,1004.4 L1075.5,1002.2 L1084.4,1002.2 L1093.3,1004.4 L1102.2,1004.4 L1111.1,984.5 L1119.9,968.9 L1128.9,964.5 L1137.7,964.5 L1146.7,973.3 L1155.5,964.5 L1164.4,955.6 L1173.3,953.3 L1182.2,960.0 L1191.1,966.6 L1199.9,973.3 L1208.9,975.6 L1217.7,984.5 L1226.7,991.1 L1235.5,986.6 L1244.4,991.1 L1253.3,984.5 L1262.1,977.8 L1271.1,971.1 L1279.9,955.6 L1288.9,955.6 L1297.7,946.6 L1306.7,951.1 L1315.5,960.0 L1324.4,948.9 L1333.3,948.9 L1342.1,948.9 L1351.1,953.3 L1359.9,953.3 L1368.9,955.6 L1377.7,955.6 L1386.7,955.6 L1395.5,966.6 L1404.4,964.5 L1413.3,962.2 L1422.1,951.1 L1431.1,957.8 L1439.9,955.6 L1448.9,955.6 L1457.7,946.6 L1466.7,951.1 L1475.5,957.8 L1484.4,955.6 L1493.3,937.8 L1502.1,937.8 L1511.1,933.3 L1519.9,922.2"/><path class="mk-i" d="M613.3,922.2 L622.2,926.6 L631.1,953.3"/></g>
+          <g id="gBnd"><path class="bdh" d="M109.0,880.5 L126.5,867.0 L130.5,850.0 L141.5,829.0 L144.5,810.0 L137.5,791.0"/><path class="bdh" d="M175.5,731.0 L186.5,730.0 L185.5,718.0 L197.0,705.5 L212.5,724.0 L211.5,756.0 L215.0,761.5 L222.5,762.0 L224.5,750.0 L234.5,738.0 L234.5,732.0 L239.5,730.0 L241.5,721.0 L238.0,649.5"/><path class="bdh" d="M274.5,615.0 L293.5,685.0 L281.5,724.0 L291.5,757.0 L293.5,779.0 L300.5,787.0 L289.5,824.0 L292.5,860.0 L318.0,867.5 L329.5,839.0 L334.5,804.0 L338.5,804.0 L335.5,810.0 L341.0,815.5 L342.5,808.0 L332.5,797.0 L325.5,767.0 L327.5,734.0 L321.5,714.0 L325.5,670.0 L305.5,632.0 L302.5,585.0"/><path class="bdh" d="M329.0,567.5 L339.5,587.0 L342.5,605.0 L340.5,628.0 L344.5,633.0 L341.5,650.0 L336.5,657.0 L338.5,662.0 L330.5,670.0 L330.5,679.0 L334.0,680.5 L336.5,674.0 L344.0,670.5 L360.5,694.0 L352.5,716.0 L346.5,720.0 L340.5,733.0 L345.0,746.5"/><path class="bdh" d="M367.0,785.5 L370.0,857.5 L377.5,851.0 L370.5,842.0 L371.5,836.0 L386.0,830.5 L396.0,835.5 L402.0,830.5 L416.0,830.5 L417.5,856.0 L425.0,868.5 L440.0,862.5 L448.0,864.5 L458.0,854.5 L478.0,849.5 L481.5,839.0 L495.0,822.5 L505.0,822.5 L515.0,830.5 L539.0,828.5 L544.5,823.0 L544.5,808.0 L540.0,800.5 L533.0,797.5 L509.0,799.5 L491.5,785.0 L494.5,770.0 L491.5,761.0 L499.0,756.5 L507.0,759.5 L526.0,753.5 L532.5,746.0 L532.5,729.0 L551.0,722.5 L561.5,738.0 L561.5,744.0 L546.5,759.0 L542.5,772.0 L549.0,778.5 L563.0,776.5 L574.5,767.0 L582.5,744.0 L594.5,735.0 L616.5,705.0 L622.5,683.0 L612.5,666.0 L596.0,662.5 L586.0,672.5 L582.5,670.0 L583.5,656.0 L596.5,649.0 L597.5,639.0 L607.5,621.0 L600.5,553.0 L584.0,555.5 L566.5,542.0 L565.5,531.0 L576.0,519.5 L596.0,541.5 L611.0,538.5 L618.5,528.0 L621.5,510.0 L611.0,485.5 L597.0,498.5 L586.0,489.5 L576.0,492.5 L566.0,505.5 L556.0,498.5 L542.5,479.0 L539.5,450.0 L550.0,433.5 L582.0,418.5 L608.0,417.5 L628.0,407.5 L636.0,409.5 L648.0,398.5 L695.0,397.5 L762.0,373.5"/><path class="bdh" d="M975.5,574.0 L988.5,589.0 L982.5,604.0 L985.5,623.0 L1006.5,643.0 L1010.5,651.0 L1011.5,671.0 L1021.0,676.5 L1034.0,677.5"/><path class="bdh" d="M1035.0,677.5 L1054.5,693.0 L1059.5,711.0 L1022.0,761.5"/><path class="bdh" d="M1017.5,768.0 L1005.5,785.0 L999.5,803.0 L1000.5,847.0 L1016.5,874.0 L1026.5,883.0 L1032.5,900.0 L1031.5,909.0 L1012.5,945.0 L1016.0,958.5"/><path class="bdh" d="M369.0,563.5 L379.0,577.5 L391.5,582.0 L406.5,599.0 L410.5,623.0 L404.5,637.0 L406.5,654.0 L402.5,673.0 L389.0,688.5"/><path class="bdh" d="M1034.5,676.0 L1022.5,655.0 L1022.5,621.0 L995.5,598.0 L1000.0,582.5 L1032.5,570.0 L991.0,545.5"/><path class="bdh" d="M1378.0,673.5 L1389.5,691.0 L1384.5,723.0 L1393.5,740.0 L1409.0,751.5 L1434.0,758.5 L1444.5,769.0"/><path class="bdh" d="M1447.5,772.0 L1463.5,798.0 L1461.5,831.0 L1476.5,869.0 L1500.5,894.0"/><path class="bdh" d="M388.5,689.0 L387.5,705.0 L381.5,706.0 L387.5,710.0 L387.5,726.0 L377.5,728.0 L372.5,752.0 L374.5,775.0 L367.5,785.0"/><path class="bd bd12" d="M109.0,880.5 L126.5,867.0 L130.5,850.0 L141.5,829.0 L144.5,810.0 L137.5,791.0"/><path class="bd bd12" d="M175.5,731.0 L186.5,730.0 L185.5,718.0 L197.0,705.5 L212.5,724.0 L211.5,756.0 L215.0,761.5 L222.5,762.0 L224.5,750.0 L234.5,738.0 L234.5,732.0 L239.5,730.0 L241.5,721.0 L238.0,649.5"/><path class="bd bd12" d="M274.5,615.0 L293.5,685.0 L281.5,724.0 L291.5,757.0 L293.5,779.0 L300.5,787.0 L289.5,824.0 L292.5,860.0 L318.0,867.5 L329.5,839.0 L334.5,804.0 L338.5,804.0 L335.5,810.0 L341.0,815.5 L342.5,808.0 L332.5,797.0 L325.5,767.0 L327.5,734.0 L321.5,714.0 L325.5,670.0 L305.5,632.0 L302.5,585.0"/><path class="bd bd12" d="M329.0,567.5 L339.5,587.0 L342.5,605.0 L340.5,628.0 L344.5,633.0 L341.5,650.0 L336.5,657.0 L338.5,662.0 L330.5,670.0 L330.5,679.0 L334.0,680.5 L336.5,674.0 L344.0,670.5 L360.5,694.0 L352.5,716.0 L346.5,720.0 L340.5,733.0 L345.0,746.5"/><path class="bd bd13" d="M367.0,785.5 L370.0,857.5 L377.5,851.0 L370.5,842.0 L371.5,836.0 L386.0,830.5 L396.0,835.5 L402.0,830.5 L416.0,830.5 L417.5,856.0 L425.0,868.5 L440.0,862.5 L448.0,864.5 L458.0,854.5 L478.0,849.5 L481.5,839.0 L495.0,822.5 L505.0,822.5 L515.0,830.5 L539.0,828.5 L544.5,823.0 L544.5,808.0 L540.0,800.5 L533.0,797.5 L509.0,799.5 L491.5,785.0 L494.5,770.0 L491.5,761.0 L499.0,756.5 L507.0,759.5 L526.0,753.5 L532.5,746.0 L532.5,729.0 L551.0,722.5 L561.5,738.0 L561.5,744.0 L546.5,759.0 L542.5,772.0 L549.0,778.5 L563.0,776.5 L574.5,767.0 L582.5,744.0 L594.5,735.0 L616.5,705.0 L622.5,683.0 L612.5,666.0 L596.0,662.5 L586.0,672.5 L582.5,670.0 L583.5,656.0 L596.5,649.0 L597.5,639.0 L607.5,621.0 L600.5,553.0 L584.0,555.5 L566.5,542.0 L565.5,531.0 L576.0,519.5 L596.0,541.5 L611.0,538.5 L618.5,528.0 L621.5,510.0 L611.0,485.5 L597.0,498.5 L586.0,489.5 L576.0,492.5 L566.0,505.5 L556.0,498.5 L542.5,479.0 L539.5,450.0 L550.0,433.5 L582.0,418.5 L608.0,417.5 L628.0,407.5 L636.0,409.5 L648.0,398.5 L695.0,397.5 L762.0,373.5"/><path class="bd bd13" d="M975.5,574.0 L988.5,589.0 L982.5,604.0 L985.5,623.0 L1006.5,643.0 L1010.5,651.0 L1011.5,671.0 L1021.0,676.5 L1034.0,677.5"/><path class="bd bd12" d="M1035.0,677.5 L1054.5,693.0 L1059.5,711.0 L1022.0,761.5"/><path class="bd bd12" d="M1017.5,768.0 L1005.5,785.0 L999.5,803.0 L1000.5,847.0 L1016.5,874.0 L1026.5,883.0 L1032.5,900.0 L1031.5,909.0 L1012.5,945.0 L1016.0,958.5"/><path class="bd bd13" d="M369.0,563.5 L379.0,577.5 L391.5,582.0 L406.5,599.0 L410.5,623.0 L404.5,637.0 L406.5,654.0 L402.5,673.0 L389.0,688.5"/><path class="bd bd23" d="M1034.5,676.0 L1022.5,655.0 L1022.5,621.0 L995.5,598.0 L1000.0,582.5 L1032.5,570.0 L991.0,545.5"/><path class="bd bd23" d="M1378.0,673.5 L1389.5,691.0 L1384.5,723.0 L1393.5,740.0 L1409.0,751.5 L1434.0,758.5 L1444.5,769.0"/><path class="bd bd23" d="M1447.5,772.0 L1463.5,798.0 L1461.5,831.0 L1476.5,869.0 L1500.5,894.0"/><path class="bd bd23" d="M388.5,689.0 L387.5,705.0 L381.5,706.0 L387.5,710.0 L387.5,726.0 L377.5,728.0 L372.5,752.0 L374.5,775.0 L367.5,785.0"/></g>
         </svg>
       </div>
       <div class="toggles">
@@ -212,6 +230,8 @@ footer{margin-top:16px;font-size:11.5px;color:var(--dim);text-align:center;line-
           <span class="key" style="background:#ffd23f"></span>지보 원호 5,800</label>
         <label class="tg"><input type="checkbox" id="tMuck" checked>
           <span class="key" style="background:#ff5d8f"></span>muck 경계</label>
+        <label class="tg"><input type="checkbox" id="tBnd" checked>
+          <span class="key" style="background:linear-gradient(90deg,#ff9d3f,#3fd0ff,#c77dff)"></span>도메인 경계 (지질 경계 후보)</label>
         <label class="tg"><input type="checkbox" id="tSpec">
           <span class="key" style="background:#fff"></span>정반사 제외</label>
       </div>
@@ -223,6 +243,7 @@ footer{margin-top:16px;font-size:11.5px;color:var(--dim);text-align:center;line-
         암종은 사진에서 판정하지 않는다(CLAUDE.md §3-6). 이 구간의 암종은 회차자료 종단지질도와
         인접 관찰시트에서 오며, 사진 분석이 담당하는 것은 <b>문서에 없는 것</b>이다 —
         막장면 내부 경계 위치, 영역 면적비, 단면 간 연속성.<br>
+        도메인 경계: 13개 조각 · VDp-1↔VDp-2 1,880px · VDp-1↔VDp-3 2,245px · VDp-2↔VDp-3 752px (평활 35 px · 최소 길이 120 px — 시각 비교로 정한 값이며 미검증).<br>
         기하 QA: 원호 731.8 px / 막장 외곽 736.9 px / 관측 반경비 1.0069 (설계 기대 1.0431),
         원근 편차 <b>+3.47 %</b> — <b>절대 길이 지표는 산출하지 않는다</b>(m04 정합 미구현).
       </div>
@@ -240,14 +261,15 @@ footer{margin-top:16px;font-size:11.5px;color:var(--dim);text-align:center;line-
           <div class="p a"><div class="lb">시공 지보패턴</div><div class="vv">FⅣ-d2(H)2-B(E)-20-R18</div></div>
         </div>
         <div style="font-size:11px;color:var(--dim);margin-bottom:4px">
-          AGF 우산 진입 위치 — 基2247 시공(2026-07-07), φ114.3  L=12.5 m</div>
+          장척강관 선수 담당구간 진입 위치 — 基2247 시공(2026-07-07) → 다음 基2253,
+          φ114.3  L=12.5 m (강관 12.5 m 중 6.5 m 겹침)</div>
         <div class="gauge">
-          <div class="fill" style="width:8.0%"></div>
-          <div class="mk" style="left:8.0%"></div>
+          <div class="fill" style="width:16.7%"></div>
+          <div class="mk" style="left:16.7%"></div>
           <div class="lb" style="left:8px">0 m</div>
-          <div class="lb" style="right:8px">12.5 m</div>
+          <div class="lb" style="right:8px">6 m (다음 설치)</div>
         </div>
-        <div class="tl"><div class="e"><div class="k">基 1951<span>TD 1942</span></div><div class="v">구간 시작 — 시공 FⅣ-b2(H)2-B(E)-20-R16</div></div><div class="e"><div class="k">基 2007<span>TD 1998</span></div><div class="v">제48회 암반판정 (STA.179+56)</div></div><div class="e"><div class="k">基 2008<span>TD 1999</span></div><div class="v">지보 변경 b2 → d2</div></div><div class="e"><div class="k">基 2111<span>TD 2102</span></div><div class="v">제49회 암반판정 (STA.180+60) — 패턴 유지</div></div><div class="e"><div class="k">基 2241<span>TD 2232</span></div><div class="v">제51회 암반판정 (STA.181+90) + 같은 基에서 R16 → R18 강화</div></div><div class="e"><div class="k">基 2265<span>TD 2256</span></div><div class="v">제52회 암반판정 (STA.182+14) — 확보한 회차자료</div></div><div class="e now"><div class="k">基 2248<span>TD 2239</span></div><div class="v"><b>이 단면</b> — 지보 강화점 基2241에서 7 m 하류</div></div></div>
+        <div class="tl"><div class="e"><div class="k">基 1951<span>TD 1942</span></div><div class="v">구간 시작 — 시공 FⅣ-b2(H)2-B(E)-20-R16</div></div><div class="e"><div class="k">基 2007<span>TD 1998</span></div><div class="v">제48회 암반판정 (STA.179+56)</div></div><div class="e"><div class="k">基 2008<span>TD 1999</span></div><div class="v">지보 변경 b2 → d2</div></div><div class="e"><div class="k">基 2111<span>TD 2102</span></div><div class="v">제49회 암반판정 (STA.180+60) — 패턴 유지</div></div><div class="e"><div class="k">基 2241<span>TD 2232</span></div><div class="v">제51회 암반판정 (STA.181+90) + 같은 基에서 R16 → R18 강화, AGF 설치간격 9 m → 6 m</div></div><div class="e"><div class="k">基 2265<span>TD 2256</span></div><div class="v">제52회 암반판정 (STA.182+14) — 확보한 회차자료</div></div><div class="e now"><div class="k">基 2248<span>TD 2239</span></div><div class="v"><b>이 단면</b> — 지보 강화점 基2241에서 7 m 하류</div></div></div>
       </div>
       <div class="note">
         설계는 CⅠ/DⅠ급이었으나 시공은 FⅣ급 + 장척강관 선수 + 거울 뿜칠 + 주입볼트다.
@@ -258,12 +280,12 @@ footer{margin-top:16px;font-size:11.5px;color:var(--dim);text-align:center;line-
 
     <div class="card">
       <div class="ch"><h2>계측 변위 vs 관리치</h2>
-        <span class="sub"><span class="src s-docm">문서실측</span><span class="src s-ocr">OCR</span>
+        <span class="sub"><span class="src s-docm">문서실측</span><span class="src s-ocr">전사: Claude 판독</span>
           최근접 基2244</span></div>
       <div class="cb"><div class="mrow"><div class="hd">천단침하 최대<b style="color:#4b7f52">-32.5 mm · 관리치 이내</b></div><div class="track"><div class="f" style="width:36.1%;background:#4b7f52"></div><div class="t" style="left:36.7%"><b>①33</b></div><div class="t" style="left:55.6%"><b>②50</b></div><div class="t" style="left:92.2%"><b>③83</b></div></div></div><div class="mrow"><div class="hd">내공변위 최대 (측점 C)<b style="color:#4b7f52">-19.9 mm · 관리치 이내</b></div><div class="track"><div class="f" style="width:22.1%;background:#4b7f52"></div><div class="t" style="left:36.7%"><b>①33</b></div><div class="t" style="left:55.6%"><b>②50</b></div><div class="t" style="left:92.2%"><b>③83</b></div></div></div></div>
       <div class="warn">이 값은 <b>基2244 단면의 실측치</b>이지 이 단면의 값이 아니다.
         계측은 10 m 간격이라 이 단면에는 계측기가 없다. 인접값으로 이 단면을 판단하지 말 것.
-        수치는 회차자료 PDF 판독(OCR)이므로 원본 대조가 필요하다.</div>
+        수치는 회차자료 PDF의 <b>텍스트 레이어를 Claude가 읽어 항목에 배정</b>한 것이다 — OCR 엔진이 아니라 판단이 개입했고, 실패해도 글자가 깨지지 않고 <b>그럴듯한 오배정</b>으로 나타난다. 원본 대조 전 사용 금지.</div>
     </div>
 
     <div class="card">
@@ -279,6 +301,30 @@ footer{margin-top:16px;font-size:11.5px;color:var(--dim);text-align:center;line-
     </div>
 
     <div class="card">
+      <div class="ch"><h2>암종 (후보)</h2>
+        <span class="sub"><span class="src s-inf">추정 · 미확정</span></span></div>
+      <div class="cb">
+        <div class="litho">
+          <span class="chip" style="background:#8FC747"></span>
+          <div><div class="lname">화산쇄설암(점토질 응회암)</div>
+            <div class="ljp">火山砕屑岩（粘土状凝灰岩） · 도면 범례 G4</div></div>
+        </div>
+        <div class="lh">추정 근거 — 색이 아니라 판정구간 동일성에서 나왔다</div>
+        <ol class="lb"><li>제51회 판정(基2241) ~ 제52회 판정(基2265) 사이가 단일 구간이고, 그 25基 전체의 시공 지보패턴이 FⅣ-d2(H)2-B(E)-20-R18로 동일하다</li><li>그 구간 안에 유일하게 존재하는 관찰시트가 断面 2263이며, 암석명 「응회암」·코드 33·암석그룹 2로 기재돼 있다</li><li>2263 스케치의 지질 라벨이 모두 「粘土状凝灰岩」(점토질 응회암) 단일 암종이고 벽면전개도도 基2258~2263 단색이다</li><li>따라서 같은 판정구간·같은 패턴에 속하는 이 단면도 동일 암종일 개연성이 높다 — 다만 확인된 것은 아니다</li></ol>
+        <div class="lh">확정 · 반증 조건</div>
+        <ul class="lb"><li>基2242~2248 구간의 관찰시트를 수령하면 즉시 확정 또는 반증된다</li><li>종단지질도 구간표(전문가 1회 판독)와 대조하면 확인된다</li><li>판정구간 내에도 국부적 암종 변화가 있을 수 있으며, 지보패턴 동일성이 암종 동일성을 보장하지는 않는다</li></ul>
+        <div class="lh">색 변종 대응 후보</div>
+        <table class="vmap"><tr><td><b>VDp-1</b></td><td>白色</td><td style="color:#8b9099">담색계 · L* 185</td></tr><tr><td><b>VDp-2</b></td><td>茶褐色</td><td style="color:#8b9099">적갈계 · a* +7.7</td></tr><tr><td><b>VDp-3</b></td><td>灰色</td><td style="color:#8b9099">암회계 · L* 63</td></tr></table>
+      </div>
+      <div class="warn">2263 검증에서 시트가 「白色」이라 부른 지점의 실측 a*가 −12.9 / −15.9(녹색조)로 나왔다. 즉 시트의 색 어휘는 물리적 색과 직결되지 않는 현장 관용어다. 위 대응은 명도 순서에 기댄 후보일 뿐 검증되지 않았다.</div>
+      <div class="note">
+        <b>이 칸은 확정값이 아니다.</b> CLAUDE.md §3-6은 색에서 암종을 유추하는 것을 금지한다 —
+        여기 적힌 암종은 자동 분석 결과가 아니라 <b>인접 시트 + 판정구간 동일성</b>에서 온 추정이며,
+        해당 구간 관찰시트를 받거나 종단지질도 구간표를 등록하면 그때 확정된다.
+      </div>
+    </div>
+
+    <div class="card">
       <div class="ch"><h2>관찰 데이터시트 A~G</h2>
         <span class="sub"><span class="src s-sheet">관찰시트</span> 미수령</span></div>
       <table><thead><tr><th>항목</th><th>값</th><th>사유</th></tr></thead><tbody><tr><td><b>A</b> 압축 강도</td><td style="color:#8b9099">—</td><td class="mono">해머·관입 실측치 — 사진·문서 어디에도 없음</td></tr><tr><td><b>B</b> 풍화·변질</td><td style="color:#8b9099">—</td><td class="mono">전문가 판단</td></tr><tr><td><b>C</b> 절리 간격 · RQD</td><td style="color:#8b9099">—</td><td class="mono">시트 미수령 · 자동은 m04 정합 필요</td></tr><tr><td><b>D</b> 개구폭·충전물·거칠기</td><td style="color:#8b9099">—</td><td class="mono">전문가 판단 (개구 5 mm ≈ 0.8 px)</td></tr><tr><td><b>E</b> 방향·경사</td><td style="color:#8b9099">—</td><td class="mono">시트 미수령 · 자동은 겉보기 경사까지만</td></tr><tr><td><b>F</b> 용수</td><td style="color:#8b9099">—</td><td class="mono">시트 미수령 · 자동은 v1 이월</td></tr><tr><td><b>G</b> 박락·붕락</td><td style="color:#8b9099">—</td><td class="mono">시트 미수령 · 자동은 m04 정합 필요</td></tr><tr><td><b>—</b> 평점 (가중평균)</td><td style="color:#8b9099">—</td><td class="mono">영구 공란 — B형 자동 확정 금지</td></tr></tbody></table>
@@ -291,7 +337,7 @@ footer{margin-top:16px;font-size:11.5px;color:var(--dim);text-align:center;line-
 
     <div class="card">
       <div class="ch"><h2>이 단면의 데이터 커버리지</h2><span class="sub">무엇이 있고 무엇이 없는가</span></div>
-      <table class="cov"><tbody><tr class="y"><td><span class="mark y">●</span> 측점·굴착 이력</td><td><span class="src s-docm">문서실측</span></td><td class="mono">Excel 사이클표 · 全基</td></tr><tr class="y"><td><span class="mark y">●</span> 전역 좌표 XYZ</td><td><span class="src s-docd">문서설계</span></td><td class="mono">선형 + 計画高</td></tr><tr class="y"><td><span class="mark y">●</span> 지보 패턴</td><td><span class="src s-docm">문서실측</span></td><td class="mono">설계·시공 全基</td></tr><tr class="y"><td><span class="mark y">●</span> 보조공법 (AGF)</td><td><span class="src s-docm">문서실측</span></td><td class="mono">최근 시공 基2247</td></tr><tr class="y"><td><span class="mark y">●</span> 계측 변위</td><td><span class="src s-docm">문서실측</span></td><td class="mono">최근접 基2244 (+4 m) · OCR 판독</td></tr><tr class="y"><td><span class="mark y">●</span> 암반판정 회차</td><td><span class="src s-docm">문서실측</span></td><td class="mono">제51회 基2241 (+7 m) · OCR 판독</td></tr><tr class="n"><td><span class="mark n">○</span> 관찰 데이터시트</td><td><span class="src s-sheet">관찰시트</span></td><td class="mono">사진 구간 미수령 — A~G·평점·소견 전량 공란</td></tr><tr class="y"><td><span class="mark y">●</span> 막장 사진 자동분석</td><td><span class="src s-auto">자동·미검수</span></td><td class="mono">외관 도메인 3 · 가시성 · 기하 QA</td></tr><tr class="n"><td><span class="mark n">○</span> 절대 길이 지표</td><td><span class="src s-auto">자동·미검수</span></td><td class="mono">m04 정합 미구현 — 절리간격·여굴량 산출 불가</td></tr></tbody></table>
+      <table class="cov"><tbody><tr class="y"><td><span class="mark y">●</span> 측점·굴착 이력</td><td><span class="src s-docm">문서실측</span></td><td class="mono">Excel 사이클표 · 全基</td></tr><tr class="y"><td><span class="mark y">●</span> 전역 좌표 XYZ</td><td><span class="src s-docd">문서설계</span></td><td class="mono">선형 + 計画高</td></tr><tr class="y"><td><span class="mark y">●</span> 지보 패턴</td><td><span class="src s-docm">문서실측</span></td><td class="mono">설계·시공 全基</td></tr><tr class="y"><td><span class="mark y">●</span> 보조공법 (AGF)</td><td><span class="src s-docm">문서실측</span></td><td class="mono">최근 시공 基2247</td></tr><tr class="y"><td><span class="mark y">●</span> 계측 변위</td><td><span class="src s-docm">문서실측</span></td><td class="mono">최근접 基2244 (+4 m) · OCR 판독</td></tr><tr class="y"><td><span class="mark y">●</span> 암반판정 회차</td><td><span class="src s-docm">문서실측</span></td><td class="mono">제51회 基2241 (+7 m) · OCR 판독</td></tr><tr class="n"><td><span class="mark n">○</span> 관찰 데이터시트</td><td><span class="src s-sheet">관찰시트</span></td><td class="mono">사진 구간 미수령 — A~G·평점·소견 전량 공란</td></tr><tr class="n"><td><span class="mark n">○</span> 암종 (후보)</td><td><span class="src s-sheet">관찰시트</span></td><td class="mono">확정 아님 — 같은 판정구간(基2241~2265) 근거의 추정</td></tr><tr class="y"><td><span class="mark y">●</span> 막장 사진 자동분석</td><td><span class="src s-auto">자동·미검수</span></td><td class="mono">외관 도메인 3 · 가시성 · 기하 QA</td></tr><tr class="y"><td><span class="mark y">●</span> 도메인 경계선</td><td><span class="src s-auto">자동·미검수</span></td><td class="mono">지질 경계 후보 — 평활 35 px · 최소 120 px</td></tr><tr class="n"><td><span class="mark n">○</span> 절대 길이 지표</td><td><span class="src s-auto">자동·미검수</span></td><td class="mono">m04 정합 미구현 — 절리간격·여굴량 산출 불가</td></tr></tbody></table>
       <div class="note">종합 기록지는 <b>판정이 아니라 근거의 집약</b>이다. 빈칸을 인접 단면 값으로
         조용히 메우지 않으며, 인접값을 쓸 때는 반드시 이격거리를 함께 표기한다.</div>
     </div>
@@ -299,16 +345,16 @@ footer{margin-top:16px;font-size:11.5px;color:var(--dim);text-align:center;line-
 </div>
 
 <footer>
-  단면 종합 기록지 v1 · 출처 등급: <span class="src s-docm">문서실측</span>
+  단면 종합 기록지 v1.1 · 출처 등급: <span class="src s-docm">문서실측</span>
   <span class="src s-docd">문서설계</span> <span class="src s-sheet">관찰시트</span>
-  <span class="src s-auto">자동·미검수</span> <span class="src s-ocr">OCR 판독</span><br>
-  자동 산출물·OCR 판독값 전량 미검수 — 전문가 검수 전 설계·시공 판단 근거로 사용 금지
+  <span class="src s-auto">자동·미검수</span> <span class="src s-ocr">전사: Claude 판독</span><br>
+  자동 산출물 · Claude 판독값 · 추정 라벨 전량 미검수 — 전문가 검수 전 설계·시공 판단 근거로 사용 금지
 </footer>
 </div>
 
 <script>
 (function(){
-  var map={tDom:'ovDom',tSpec:'ovSpec',tArc:'gArc',tFace:'gFace',tMuck:'gMuck'};
+  var map={tDom:'ovDom',tSpec:'ovSpec',tArc:'gArc',tFace:'gFace',tMuck:'gMuck',tBnd:'gBnd'};
   Object.keys(map).forEach(function(id){
     var cb=document.getElementById(id), el=document.getElementById(map[id]);
     if(!cb||!el) return;
