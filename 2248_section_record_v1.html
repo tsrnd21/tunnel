@@ -117,6 +117,12 @@ tbody tr:last-child td{border-bottom:none}
 .gauge .mk{position:absolute;top:-2px;bottom:-2px;width:3px;background:#a52222}
 .gauge .lb{position:absolute;top:6px;font-size:10.5px;font-variant-numeric:tabular-nums;color:var(--mid)}
 
+/* 計測ブロック */
+.mblk{border:1px solid var(--line);border-radius:9px;padding:11px 13px 4px;margin-bottom:11px;background:#fbfcfd}
+.mblk:last-child{margin-bottom:0}
+.mblk .mh{font-size:11.5px;color:var(--mid);margin-bottom:10px;line-height:1.5}
+.mblk .mh b{color:var(--ink);font-size:12.5px}
+
 /* 計測バー */
 .mrow{margin-bottom:26px}
 .mrow .hd{display:flex;font-size:12px;margin-bottom:4px}
@@ -199,8 +205,8 @@ footer{margin-top:16px;font-size:11.5px;color:var(--dim);text-align:center;line-
   </div>
   <div class="st mea">
     <h3>最寄りの計測断面 <span class="src s-ocr">転記: Claude 判読（未照査）</span></h3>
-    <div class="big">第2244基 · 4 m 坑口側</div>
-    <p>No.181+93.000：天端沈下 -32.5 mm、内空変位 -19.9 mm。いずれも管理値以内である。既掘削区間の計測値であり、 本断面には計測器を設置していない。</p>
+    <div class="big">第2244基（直前＝最寄り）</div>
+    <p>4 m 坑口側・2026-07-02 掘削 — 管理値以内。本断面に計測器はない。</p>
   </div>
 </div>
 
@@ -283,11 +289,9 @@ footer{margin-top:16px;font-size:11.5px;color:var(--dim);text-align:center;line-
     <div class="card">
       <div class="ch"><h2>計測変位 vs 管理値</h2>
         <span class="sub"><span class="src s-docc">計測値（書類）</span><span class="src s-ocr">転記: Claude 判読（未照査）</span>
-          最近接 第2244基</span></div>
-      <div class="cb"><div class="mrow"><div class="hd">天端沈下 最大<b style="color:#4b7f52">-32.5 mm · 管理値以内</b></div><div class="track"><div class="f" style="width:36.1%;background:#4b7f52"></div><div class="t" style="left:36.7%"><b>①33</b></div><div class="t" style="left:55.6%"><b>②50</b></div><div class="t" style="left:92.2%"><b>③83</b></div></div></div><div class="mrow"><div class="hd">内空変位 最大（測点 C）<b style="color:#4b7f52">-19.9 mm · 管理値以内</b></div><div class="track"><div class="f" style="width:22.1%;background:#4b7f52"></div><div class="t" style="left:36.7%"><b>①33</b></div><div class="t" style="left:55.6%"><b>②50</b></div><div class="t" style="left:92.2%"><b>③83</b></div></div></div></div>
-      <div class="warn">この値は<b>第2244基 断面の計測値</b>であり、本断面の値ではない。
-        計測は 10 m 間隔のため、本断面に計測器は設置されていない。近傍の値で本断面を判断しないこと。
-        数値は回次資料 PDF の<b>テキストレイヤを Claude が読み、項目に割り当てた</b>ものである — OCR エンジンではなく判断が介在しており、誤っても文字化けせず<b>もっともらしい誤割当</b>として現れる。原本照合前の使用は禁止。</div>
+          直前・最寄り 2断面</span></div>
+      <div class="cb"><div class="mblk"><div class="mh"><b>直前＝最寄り</b> 第2244基（4 m 坑口側）· 2026-07-02 掘削 — No.181+93.000</div><div class="mrow"><div class="hd">天端沈下 最大<b style="color:#4b7f52">-32.5 mm · 管理値以内</b></div><div class="track"><div class="f" style="width:36.1%;background:#4b7f52"></div><div class="t" style="left:36.7%"><b>①33</b></div><div class="t" style="left:55.6%"><b>②50</b></div><div class="t" style="left:92.2%"><b>③83</b></div></div></div><div class="mrow"><div class="hd">内空変位 最大（測点 C）<b style="color:#4b7f52">-19.9 mm · 管理値以内</b></div><div class="track"><div class="f" style="width:22.1%;background:#4b7f52"></div><div class="t" style="left:36.7%"><b>①33</b></div><div class="t" style="left:55.6%"><b>②50</b></div><div class="t" style="left:92.2%"><b>③83</b></div></div></div></div></div>
+      <div class="warn">このカードの2つの値は<b>いずれも別断面の計測値</b>である。計測は 10 m 間隔のため、本断面に計測器はない。<br><b>直前</b>は本切羽を掘削する際に実際に参照できた断面、<b>最寄り</b>は空間的に最も近い断面である — 最寄りが本断面より切羽側にある場合、撮影時点ではまだ掘削されていないことを意味する。<br>両者の判定が食い違うことがあるため、片方だけで本断面を判断しないこと。数値は回次資料 PDF のテキストレイヤを Claude が読み、項目に割り当てたものであり、原本照合前の使用は禁止。</div>
     </div>
 
     <div class="card">
