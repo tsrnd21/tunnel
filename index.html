@@ -53,7 +53,7 @@ footer{margin-top:56px;border-top:3px solid var(--ink);padding-top:12px;font-fam
 
 <header>
 <div class="doc-no">TUNNEL FACE RECORD SYSTEM · FACE SECTION VIEWER · PROTOTYPE v1.1 (REPORT + 3D FENCE)</div>
-<h1>切羽断面ビューア — 支保曲線・ズリ境界・地山種別の変化</h1>
+<h1>切羽断面ビューア — 支保曲線・muck（ズリ）境界・地山種別の変化</h1>
 <p>各切羽写真を<b>変形・トリミングなし</b>で正方フレーム内に丸ごと収め（contain）、その上に
 検出した三つのみを重ねる: <b>支保曲線</b>（シャドウ上端境界、アンカー通過を拘束した円弧）、
 <b>ズリ上端境界</b>（観察=実線／推定=破線 + ズリ起点）、<b>地山種別の変化</b>（VD 外観領域）。
@@ -70,8 +70,8 @@ footer{margin-top:56px;border-top:3px solid var(--ink);padding-top:12px;font-fam
 <div class="callout"><b>注意 —</b> 全ての検出線（支保曲線・ズリ境界・VD 領域）は自動算出の候補であり、専門家未照査である。<br>
 <b>【2026-07-30 更新】</b>標準断面図 DWG を受領し、断面諸元は確定した — 内空 5,300 / 覆工外面・吹付け内面 5,600 /
 <b>整合基準線 5,800</b> / 設計掘削線 6,050 mm。ただし本ビューアの断面座標は依然として<b>無次元の正規化</b>であり、
-実スケール（m）は幾何整合（M04）の実装後に付与する。<br>
-<b>本ビューアの VD-01~04 は旧体系である。</b>断面総合記録シート v1.1 は共有中心 + z-score による
+実スケール（m）は整合（M04）の実装後に付与する。<br>
+<b>本ビューアの VD-01~04 は旧体系である。</b>断面総合記録シート v1.3 は共有中心 + z-score による
 <b>VDp-1/2/3</b> を用いており、両者は対応しない。混同しないこと。</div>
 
 <section>
@@ -116,7 +116,7 @@ footer{margin-top:56px;border-top:3px solid var(--ink);padding-top:12px;font-fam
 <h2>VD 構成比の推移（TD 軸 stacked）</h2>
 <div class="panel"><svg id="ribbon" viewBox="0 0 1140 240"></svg>
 <p style="font-size:12.5px;color:var(--ink2);margin-top:8px">各断面の切羽内 VD 面積比（auto 候補）。
-延伸区間を含む TD 1,942~2,239 m — 淡緑（VD-04）の出現・拡大と、それ以前の区間の構成変化を併せて見ることができる。</p></div>
+拡幅区間を含む TD 1,942~2,239 m — 淡緑（VD-04）の出現・拡大と、それ以前の区間の構成変化を併せて見ることができる。</p></div>
 </section>
 
 <section>
@@ -140,13 +140,13 @@ footer{margin-top:56px;border-top:3px solid var(--ink);padding-top:12px;font-fam
 
 
 <section>
-<h2>断面総合記録シート v1.1（個別断面）</h2>
+<h2>断面総合記録シート v1.3（個別断面）</h2>
 <div class="panel">
   <p style="font-size:13px;color:var(--ink2);margin-bottom:10px">
     切羽写真の自動解析に加え、支保パターン・補助工法・計測変位・岩判定回次・線形などの
     <b>書類由来の記録</b>を 1 枚にまとめたシート。現在 <b>3 断面</b>のみ作成済みで、
     残り 35 断面は未作成である（本ビューアの 38 断面すべてに対応するものではない）。</p>
-  <div style="display:flex;gap:10px;flex-wrap:wrap"><a class="rec" href="2242_section_record_v1.1.html">第 2242 基 <b>記録シートあり</b></a><a class="rec" href="2245_section_record_v1.1.html">第 2245 基 <b>記録シートあり</b></a><a class="rec" href="2248_section_record_v1.1.html">第 2248 基 <b>記録シートあり</b></a></div>
+  <div style="display:flex;gap:10px;flex-wrap:wrap"><a class="rec" href="2242_section_record_v1.3.html">第 2242 基 <b>記録シートあり</b></a><a class="rec" href="2245_section_record_v1.3.html">第 2245 基 <b>記録シートあり</b></a><a class="rec" href="2248_section_record_v1.3.html">第 2248 基 <b>記録シートあり</b></a></div>
   <p style="font-size:12.5px;color:var(--ink2);margin-top:10px">
     記録シートの外観ドメインは <b>VDp-1/2/3</b>（共有中心 + z-score）であり、
     本ビューアの <b>VD-01~04</b> とは別体系である。</p>
@@ -249,7 +249,7 @@ function drawSection(i){
     `<b>上半 掘削</b> ${s.excav_top||"-"}<br>`+
     `<b>設計</b> ${s.design_pattern||"-"}<br><b>実施</b> ${s.actual_pattern||"-"}<br>`+
     `<span class="est"><b>円弧</b> r=${a.r_rel}W · rms=${a.rms_px}px · ${a.fit}${a.anchor_mirrored?' [MIRROR]':''}</span><br>`+
-    `<b>muck</b> ${mbTxt}<br>`+
+    `<b>ズリ</b> ${mbTxt}<br>`+
     `<b>face</b> ${(s.face_area_ratio*100).toFixed(0)}% · <b>VD</b> ${s.regions.slice(0,4).map(r=>r.visual_domain_code+" "+(r.area_ratio_in_face*100).toFixed(0)+"%").join(" · ")}<br>`+
     `<span class="warn">登録・分割は全て自動候補 — 専門家照査前</span>`;
 
