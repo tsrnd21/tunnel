@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow">
+
 <title>切羽断面ビューア v10 — 支保曲線・ズリ・地山変化（プロトタイプ）</title>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
@@ -57,7 +58,7 @@ footer{margin-top:56px;border-top:3px solid var(--ink);padding-top:12px;font-fam
 <p>各切羽写真を<b>変形・トリミングなし</b>で正方フレーム内に丸ごと収め（contain）、その上に
 検出した三つのみを重ねる: <b>支保曲線</b>（シャドウ上端境界、アンカー通過を拘束した円弧）、
 <b>ズリ上端境界</b>（観察=実線／推定=破線 + ズリ起点）、<b>地山種別の変化</b>（VD 外観領域）。
-トンネル曲線と全ての注記は写真の内側にあるため、常にフレームより小さく切れることはない。
+トンネル曲線と全ての注記は写真の内側にあるため、常にフレームより小さく、切れることはない。
 断面位置は Excel STA（= モデルの Building Section 名称）で表記する。モデル形状のオーバーレイは入れない。</p>
 <div class="meta">
 <span>断面数 <b>38</b>（第1951~2248基）</span>
@@ -247,7 +248,7 @@ function drawSection(i){
     `<b>モデル断面</b> ${staName(s)}<br>`+
     `<b>測点</b> ${staLabel(s)} · <b>TD</b> ${s.TD_m.toFixed(1)} m<br>`+
     `<b>上半 掘削</b> ${s.excav_top||"-"}<br>`+
-    `<b>設計</b> ${s.design_pattern||"-"}<br><b>実施</b> ${s.actual_pattern||"-"}<br>`+
+    `<b>設計</b> ${s.design_pattern||"-"}<br><b>施工</b> ${s.actual_pattern||"-"}<br>`+
     `<span class="est"><b>円弧</b> r=${a.r_rel}W · rms=${a.rms_px}px · ${a.fit}${a.anchor_mirrored?' [MIRROR]':''}</span><br>`+
     `<b>ズリ</b> ${mbTxt}<br>`+
     `<b>face</b> ${(s.face_area_ratio*100).toFixed(0)}% · <b>VD</b> ${s.regions.slice(0,4).map(r=>r.visual_domain_code+" "+(r.area_ratio_in_face*100).toFixed(0)+"%").join(" · ")}<br>`+
